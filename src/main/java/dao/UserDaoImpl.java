@@ -32,6 +32,10 @@ public class UserDaoImpl implements UserDao {
         List<User> users = session.createSQLQuery(sql).addEntity(User.class).list();
         session.getTransaction().commit();
 
+        if(users == null||users.size()==0){
+            return null;
+        }
+
         return users.get(0);
     }
 }

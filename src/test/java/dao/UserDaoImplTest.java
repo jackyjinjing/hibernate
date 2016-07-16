@@ -12,8 +12,8 @@ public class UserDaoImplTest {
     public void testSave(){
         UserDao userDao = new UserDaoImpl();
         User user = new User();
-        user.setName("jackyjinjing");
-        user.setPassword("j123456");
+        user.setName("jacky");
+        user.setPassword("123456");
         userDao.save(user);
     }
 
