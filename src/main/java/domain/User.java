@@ -41,4 +41,9 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    @Override
+    public String toString() {
+        return "myName is "+getName();
+    }
 }

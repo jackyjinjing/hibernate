@@ -1,0 +1,18 @@
+<configuration debug="false" scan="true">
+    <property resource="kafka.properties"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %5p %c{1}:%L-%m%n</pattern>
+        </encoder>
+    </appender>
+
+
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+
+
+</configuration>

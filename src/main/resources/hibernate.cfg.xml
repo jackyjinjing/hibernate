@@ -11,5 +11,7 @@
         <property name="connection.password">derbysoft</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <mapping class="domain.User"/>
     </session-factory>
 </hibernate-configuration>
